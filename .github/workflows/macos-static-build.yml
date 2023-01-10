@@ -22,7 +22,7 @@ jobs:
 
       - name: Building
         run: |
-         ../compileAndBuildVLCKit.sh -x -v -b -a x86_64 
+         sh ./compileAndBuildVLCKit.sh -x -v -b -a x86_64 
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
